@@ -1,5 +1,5 @@
 name: CI/CD
-on: [pull_request]
+on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -52,8 +52,8 @@ jobs:
         with:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          application_name: bean
-          environment_name: bean-env
+          application_name: demoLK
+          environment_name: Demolk-env
           version_label: 4
           region: us-east-1
           deployment_package: deploy.zip
