@@ -43,7 +43,7 @@ group :development, :test do
   gem "shoulda-matchers", ">= 4.0.1", ">= 4.0.1"
   gem "factory_girl_rails", ">= 4.9.0"
   gem "database_cleaner"
-  gem "email_spec"
+  gem "email_spec", ">= 2.2.0"
   gem 'rspec-rails', '~> 3.9', '>= 3.9.1'
   gem "shoulda-matchers"
 end
